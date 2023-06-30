@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Quicksand:wght@600&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  /* min-height: 100vh; */
+  height: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #1d2123;
+  font-family: "Quicksand", sans-serif;
+}
+
+.top-bar {
+  width: 100%;
+  min-height: 73px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.top-bar img {
+  margin-left: 20px;
+  width: 34px;
+  height: 34px;
+}
+
+.search-bar {
+  width: 92%;
+  max-width: 700px;
+  height: 50px;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.search-bar input {
+  background: transparent;
+  height: 25px;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 20px 5px;
+  font-size: 20px;
+  color: #faf9f6;
+  border-bottom: 1px solid #2d3335;
+}
+
+.search-bar button {
+  border: none;
+  background: none;
+  border-radius: 50%;
+}
+
+.search-bar button i {
+  color: #2d3335;
+  padding-top: 8px;
+  font-size: 1rem;
+}
+
+.nav {
+  width: 80px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #1a1e1f;
+  width: min-content;
+  border-radius: 32px;
+}
+
+.links a i {
+  font-size: 25px;
+  padding: 10px;
+  color: #efeee0;
+  opacity: 25%;
+  transition: 0.5s;
+}
+
+.links a i:hover {
+  opacity: 100%;
+}
+
+.page-splash {
+  background-color: antiquewhite;
+  /* width: 686px; */
+  min-width: 686px;
+  max-width: 686px;
+  height: 382px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.charts {
+  background-color: aqua;
+  width: 100%;
+  margin-right: 5%;
+  border-radius: 40px;
+}
+
+.new-releases {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.splash-charts {
+  width: 100%;
+  height: fit-content;
+  max-height: 478px;
+  display: inline-flex;
+  gap: 30px;
+}
+
+main {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
